@@ -3,12 +3,12 @@
 const express = require('express');
 const { success, error, validation } = require("../../../helpers/apiResponse");
 const app = express();
-require('dotenv')
-const client = require('twilio')(process.env.accountSid, process.env.authToken);
+//require('dotenv')
+//const client = require('twilio')(process.env.accountSid, process.env.authToken);
 
 //SendOtp
 
-const SendOtp =  async function (req, res){
+/* const SendOtp =  async function (req, res){
     console.log("this is otp route")
     console.log(req.body)
     client.verify.services(process.env.ServiceSID)
@@ -19,8 +19,6 @@ const SendOtp =  async function (req, res){
         res.status(200).json(success("Success otp send",
                                 verification.status,
                                 res.statusCode));
-        // res.status(200).json(success("Success otp send",
-        // res.statusCode));
       })
       .catch(e => {
         console.log(e.message)
@@ -31,7 +29,7 @@ const SendOtp =  async function (req, res){
          }
       });
       
-}
+} */
 
 // verifyOtp
 
