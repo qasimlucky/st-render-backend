@@ -8,7 +8,7 @@ const app = express();
 
 //SendOtp
 
-/* const SendOtp =  async function (req, res){
+ const SendOtp =  async function (req, res){
     console.log("this is otp route")
     console.log(req.body)
     client.verify.services(process.env.ServiceSID)
@@ -29,7 +29,7 @@ const app = express();
          }
       });
       
-} */
+} 
 
 // verifyOtp
 
