@@ -3,7 +3,7 @@
 const express = require('express');
 const { success, error, validation } = require("../../../helpers/apiResponse");
 const app = express();
-//require('dotenv')
+require('dotenv')
 const client = require('twilio')(process.env.accountSid, process.env.authToken);
 
 //SendOtp
