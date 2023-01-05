@@ -1,7 +1,6 @@
 var router = require('express').Router();
 const multer  = require('multer')
 const path = require("path");
-const { Route } = require('react-router-dom');
 
 const { 
     getMovie,
